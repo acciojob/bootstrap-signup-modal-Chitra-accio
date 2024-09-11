@@ -8,23 +8,38 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-	<div class="p-6 mb-2 bg-secondary">
-		<button type="button" class="btn btn-danger" data-toggle="signup" data-target="#mysignup">Sign Up</button>
+	<div class="p-5 mt-1 bg-secondary">
+		<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Sign Up</button>
 	</div>
-		<div class="modal-fade" id="mysignup" role="dialog" aria-labelledby="signuplabel" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<h5 class="modal-title" id="signuplabel">Sign up</h5>
-					<button type="button" class="close" data-dismiss="form" aria-label="Close">
-						<span aria-hidden="true"></span>
-					</button>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+	  </div>
+		<div class="modal-body">
+			<form>
+				<div class="form-group">
+				<label for="email">Email Address</label>
+				<input type="email" class="form-control" placeholder="Enter email">
+				<small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small>
 				</div>
-			<form class="row g-3">
-				<title>Create Account</title>
-				<label for="email">Email address</label>
-				<input type="email" class="form-control">
+
+				<div classs="form-group">
+				<label for="password">Password</label>
+				<input type="password" class="form-control" placeholder="Password">	
+				</div>
+				
+				<div classs="form-group">
+				<label for="confirm-password">Confirm Password</label>
+				<input type="password" class="form-control" placeholder="Confirm Password">	
+				</div>
+				<button type="submit" class="btn btn-success mb-4">Submit</button>
 			</form>
 			
-		</div>
+		</div>		
 	</body>
 </html>
